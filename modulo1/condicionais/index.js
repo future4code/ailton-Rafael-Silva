@@ -27,20 +27,6 @@
 
 // ==1===
 
-// let generoFilme = prompt("Qual o genero do filme?")
-// let precoDoIngresso = prompt("O ingresso é abaixo de 15 reais?")
-
-// const cinemaTop = (generoFilme, precoDoIngresso) => {
-//     if(generoFilme === "fantasia" && precoDoIngresso < 15) {
-//         console.log("Bom filme")
-//     } else {
-//         console.log("Escolha outro filme")
-//     }
-
-// }
-// cinemaTop(generoFilme,precoDoIngresso)
-
-
 // let idadeDoUsuario = Number(prompt("Qual a sua idade?"))
 
 // let dirigirCarro = (idadeDoUsuario) => {
