@@ -21,18 +21,24 @@
 
 
 // EXERCÍCIO 03
-const array = [0,8,23,16,10,15,41,12,13]
+// const array = [0,8,23,16,10,15,41,12,13]
 
-function retornaArrayOrdenado(array) {
-      const quantidade = array.sort((a,b) => a-b)
-    return quantidade
-    } 
+// function retornaArrayOrdenado(array) {
+//       const quantidade = array.sort((a,b) => a-b)
+//     return quantidade
+//     } 
 
 
 // EXERCÍCIO 04
+const array = [0,8,23,16,10,15,41,12,13]
+
 function retornaNumerosPares(array) {
-  
-}
+    const par = x => x % 2 === 0
+     const pares = array.filter(par)
+    return pares
+ } 
+
+
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
