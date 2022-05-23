@@ -41,10 +41,10 @@
 
 // EXERCÍCIO 05
 
-function retornaNumerosParesElevadosADois(array) {
-    const novoArray = array.filter(item => item %2 === 0).map (item => item ** 2)
-    return novoArray
-}
+// function retornaNumerosParesElevadosADois(array) {
+//     const novoArray = array.filter(item => item %2 === 0).map (item => item ** 2)
+//     return novoArray
+// }
 
 // EXERCÍCIO 06
 
@@ -59,9 +59,13 @@ function retornaNumerosParesElevadosADois(array) {
 // }
 
 // EXERCÍCIO 07
-function retornaObjetoEntreDoisNumeros(num1, num2) {
+// function retornaObjetoEntreDoisNumeros(num1, num2) {
+//    if (num1 > num2) {
+//        return maiorNumero
+//    } else{
 
-}
+//    }
+// }
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
@@ -107,7 +111,16 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-
+let comprinhas = contas.map((ObjCLiente) =>{
+    for (let compra of ObjCLiente.compras){
+        ObjCLiente.saldoTotal = ObjCLiente.saldoTotal - compra;
+    }
+    return {...ObjCLiente,
+    saldoTotal: ObjCLiente.saldoTotal,
+    compras: []
+    }
+})
+return comprinhas;
 }
 
 // EXERCÍCIO 15A
