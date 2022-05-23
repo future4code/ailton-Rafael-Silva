@@ -30,25 +30,50 @@
 
 
 // EXERCÍCIO 04
-const array = [0,8,23,16,10,15,41,12,13]
+// const array = [0,8,23,16,10,15,41,12,13]
 
-function retornaNumerosPares(array) {
-    const par = x => x % 2 === 0
-     const pares = array.filter(par)
-    return pares
- } 
-
+// function retornaNumerosPares(array) {
+//     const par = x => x % 2 === 0
+//      const pares = array.filter(par)
+//     return pares
+//  } 
 
 
 // EXERCÍCIO 05
-function retornaNumerosParesElevadosADois(array) {
-    
-}
+// const array = [8,16,10,12,20]
+
+// function retornaNumerosParesElevadosADois(array) {
+//     const par = x => x % 2 === 0
+//     const quantidade = array.Math.pow(2)
+//     return quantidade 
+// }
 
 // EXERCÍCIO 06
+
 function retornaMaiorNumero(array) {
-  
+    let maior = -Infinity
+    for (let numero of array){
+    if(numero > maior) {
+        maior = numero       
+    }
+}   
+ return maior
 }
+// const maior = (arr) => {
+//   let maior = 0
+//
+//   for(let i = 0; i < arr.length; i++) {
+//     const elemento = arr[i]
+
+//     if (elemento > maior) {
+//       maior = elemento
+//     }
+//   }
+
+//   console.log(maior)
+// }
+
+
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
