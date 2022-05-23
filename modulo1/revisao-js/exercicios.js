@@ -50,30 +50,15 @@
 
 // EXERCÍCIO 06
 
-function retornaMaiorNumero(array) {
-    let maior = -Infinity
-    for (let numero of array){
-    if(numero > maior) {
-        maior = numero       
-    }
-}   
- return maior
-}
-// const maior = (arr) => {
-//   let maior = 0
-//
-//   for(let i = 0; i < arr.length; i++) {
-//     const elemento = arr[i]
-
-//     if (elemento > maior) {
-//       maior = elemento
+// function retornaMaiorNumero(array) {
+//     let maior = -Infinity
+//     for (let numero of array){
+//     if(numero > maior) {
+//         maior = numero       
 //     }
-//   }
-
-//   console.log(maior)
+// }   
+//  return maior
 // }
-
-
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
@@ -87,8 +72,15 @@ function retornaNPrimeirosPares(n) {
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-
+        if (ladoA === ladoB && ladoA === ladoC){
+            return "Equilátero"
+        } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC){
+            return "Isósceles"
+        } else {
+            return "Escaleno"
+        }
 }
+
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
