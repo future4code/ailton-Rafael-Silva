@@ -12,17 +12,22 @@
 // }
 
 // EXERCÍCIO 02
-const array = [0,8,23,16,10,15,41,12,13]
-function retornaArrayInvertido(array) {
-      const quantidade = array.reverse()
-    return quantidade
-    } 
+// const array = [0,8,23,16,10,15,41,12,13]
+
+// function retornaArrayInvertido(array) {
+//       const quantidade = array.reverse()
+//     return quantidade
+//     } 
 
 
 // EXERCÍCIO 03
+const array = [0,8,23,16,10,15,41,12,13]
+
 function retornaArrayOrdenado(array) {
-  
-}
+      const quantidade = array.sort((a,b) => a-b)
+    return quantidade
+    } 
+
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
