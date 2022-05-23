@@ -59,14 +59,30 @@
 // }
 
 // EXERCÍCIO 07
-// function retornaObjetoEntreDoisNumeros(num1, num2) {
-//    if (num1 > num2) {
-//        return maiorNumero
-//    } else{
-
-//    }
-// }
-
+function retornaObjetoEntreDoisNumeros(num1, num2) {
+ let maiorNum = 0
+ let maiorDivisivelPeloMenor = 0
+ let difere = 0
+ let objeto1 = {maiorNumero: 0,}
+ let objeto2 = {maiorNumero: 0,}
+ if (num1 > num2){
+     maiorNum = num1
+     maiorDivisivelPeloMenor = num1 % num2 === 0
+     difere = num1 - num2
+     objeto1.maiorNumero = maiorNum
+     objeto1.maiorDivisivelPorMenor = maiorDivisivelPeloMenor,
+     objeto1.diferenca = difere
+        return objeto1
+ } else{
+     maiorNum = num2
+     maiorDivisivelPeloMenor = num2 % num1 === 0
+     difere = num2 - num1
+     objeto2.maiorNumero = maiorNum
+     objeto2.maiorDivisivelPorMenor = maiorDivisivelPeloMenor
+     objeto2.diferenca = difere
+        return objeto2
+ }
+}
 // EXERCÍCIO 08
 // function retornaNPrimeirosPares(n) {
 //     let numerosPares = [];
@@ -92,36 +108,44 @@
 
 
 // EXERCÍCIO 10
-function retornaSegundoMaiorESegundoMenor(array) {
-  let primMaior = -Infinity
-  let segMaior = -Infinity
-  let primMenor = Infinity
-  let segMenor = Infinity
+// function retornaSegundoMaiorESegundoMenor(array) {
+//   let primMaior = -Infinity
+//   let segMaior = -Infinity
+//   let primMenor = Infinity
+//   let segMenor = Infinity
 
-  for (let number of array) {
-      if (number > primMaior) {
-          primMaior = number
-  } if (number < primMenor){
-      primMenor = number
-  }
-}
-for (let number of array){
-    if (number > segMaior && number !== primMaior) {
-        segMaior = number
-    } if (number < segMenor && number !== primMenor){
-        segMenor = number
-    }
-}
-    const resultado = [segMaior, segMenor]
-    return resultado
-}
+//   for (let number of array) {
+//       if (number > primMaior) {
+//           primMaior = number
+//   } if (number < primMenor){
+//       primMenor = number
+//   }
+// }
+// for (let number of array){
+//     if (number > segMaior && number !== primMaior) {
+//         segMaior = number
+//     } if (number < segMenor && number !== primMenor){
+//         segMenor = number
+//     }
+// }
+//     const resultado = [segMaior, segMenor]
+//     return resultado
+// }
 
 
 
 // EXERCÍCIO 11
-function retornaChamadaDeFilme(filme) {
-   
-}
+
+
+// function retornaChamadaDeFilme(filme) {
+//     nome = 'O Diabo Veste Prada',
+//     nomeano = 2006,
+//     diretor = 'David Frankel',
+//     nomeatores = ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+
+//    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, 
+// dirigido por ${filme.diretor} e estrelado por ${filme.nomeatores}.`
+// }
 
 // EXERCÍCIO 12
 // function retornaPessoaAnonimizada(pessoa) {
