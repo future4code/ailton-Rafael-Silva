@@ -96,7 +96,9 @@ function retornaChamadaDeFilme(filme) {
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
-   
+   return {...pessoa,
+    nome: "ANÔNIMO"
+   }
 }
 
 // EXERCÍCIO 13A
@@ -109,12 +111,12 @@ function retornaPessoaAnonimizada(pessoa) {
 // }
 
 // EXERCÍCIO 13B
-function retornaPessoasNaoAutorizadas(pessoas) {
-  const pessoasAut = pessoas.filter((itens) => {
-      return itens.idade <= 14 || itens.idade >= 60 || itens.altura < 1.5
-  })
-  return pessoasAut
-} 
+// function retornaPessoasNaoAutorizadas(pessoas) {
+//   const pessoasAut = pessoas.filter((itens) => {
+//       return itens.idade <= 14 || itens.idade >= 60 || itens.altura < 1.5
+//   })
+//   return pessoasAut
+// } 
 
 
 // EXERCÍCIO 14
