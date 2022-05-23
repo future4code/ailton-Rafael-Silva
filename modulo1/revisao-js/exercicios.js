@@ -40,13 +40,11 @@
 
 
 // EXERCÍCIO 05
-// const array = [8,16,10,12,20]
 
-// function retornaNumerosParesElevadosADois(array) {
-//     const par = x => x % 2 === 0
-//     const quantidade = array.Math.pow(2)
-//     return quantidade 
-// }
+function retornaNumerosParesElevadosADois(array) {
+    const novoArray = array.filter(item => item %2 === 0).map (item => item ** 2)
+    return novoArray
+}
 
 // EXERCÍCIO 06
 
@@ -71,15 +69,15 @@ function retornaNPrimeirosPares(n) {
 }
 
 // EXERCÍCIO 09
-function classificaTriangulo(ladoA, ladoB, ladoC) {
-        if (ladoA === ladoB && ladoA === ladoC){
-            return "Equilátero"
-        } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC){
-            return "Isósceles"
-        } else {
-            return "Escaleno"
-        }
-}
+// function classificaTriangulo(ladoA, ladoB, ladoC) {
+//         if (ladoA === ladoB && ladoA === ladoC){
+//             return "Equilátero"
+//         } else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC){
+//             return "Isósceles"
+//         } else {
+//             return "Escaleno"
+//         }
+// }
 
 
 // EXERCÍCIO 10
