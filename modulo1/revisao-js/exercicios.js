@@ -68,15 +68,15 @@
 // }
 
 // EXERCÍCIO 08
-function retornaNPrimeirosPares(n) {
-    let numerosPares = [];
-    for (let i = 0; numerosPares.length < n; i++) {
-        if (i % 2 == 0) {
-            numerosPares.push(i);
-        }
-    }
-    return numerosPares;
-}
+// function retornaNPrimeirosPares(n) {
+//     let numerosPares = [];
+//     for (let i = 0; numerosPares.length < n; i++) {
+//         if (i % 2 == 0) {
+//             numerosPares.push(i);
+//         }
+//     }
+//     return numerosPares;
+// }
 
 
 // EXERCÍCIO 09
@@ -93,8 +93,30 @@ function retornaNPrimeirosPares(n) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+  let primMaior = -Infinity
+  let segMaior = -Infinity
+  let primMenor = Infinity
+  let segMenor = Infinity
+
+  for (let number of array) {
+      if (number > primMaior) {
+          primMaior = number
+  } if (number < primMenor){
+      primMenor = number
+  }
 }
+for (let number of array){
+    if (number > segMaior && number !== primMaior) {
+        segMaior = number
+    } if (number < segMenor && number !== primMenor){
+        segMenor = number
+    }
+}
+    const resultado = [segMaior, segMenor]
+    return resultado
+}
+
+
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
