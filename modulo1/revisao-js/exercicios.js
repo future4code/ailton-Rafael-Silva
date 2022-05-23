@@ -4,17 +4,20 @@
 
 
 // EXERCÍCIO 01
-const array= ["Banana", "Morango", "Abacaxi"]
+// const array = ["Banana", "Morango", "Abacaxi"]
 
-function retornaTamanhoArray(array) {
-  const quantidade = array.length
-return quantidade
-}
+// function retornaTamanhoArray(array) {
+//   const quantidade = array.length
+// return quantidade
+// }
 
 // EXERCÍCIO 02
+const array = [0,8,23,16,10,15,41,12,13]
 function retornaArrayInvertido(array) {
-  
-}
+      const quantidade = array.reverse()
+    return quantidade
+    } 
+
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
