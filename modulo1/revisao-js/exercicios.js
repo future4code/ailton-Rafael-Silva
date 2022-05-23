@@ -101,7 +101,11 @@ function retornaPessoaAnonimizada(pessoa) {
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+    const pessoasAut = pessoas.filter((autorizo) => {
+        return autorizo.altura >= 1.5 && autorizo.idade >= 15 &&
+        autorizo.idade < 60
+    })
+   return pessoasAut
 }
 
 // EXERCÍCIO 13B
@@ -110,18 +114,18 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 }
 
 // EXERCÍCIO 14
-function retornaContasComSaldoAtualizado(contas) {
-let comprinhas = contas.map((ObjCLiente) =>{
-    for (let compra of ObjCLiente.compras){
-        ObjCLiente.saldoTotal = ObjCLiente.saldoTotal - compra;
-    }
-    return {...ObjCLiente,
-    saldoTotal: ObjCLiente.saldoTotal,
-    compras: []
-    }
-})
-return comprinhas;
-}
+// function retornaContasComSaldoAtualizado(contas) {
+// let comprinhas = contas.map((ObjCLiente) =>{
+//     for (let compra of ObjCLiente.compras){
+//         ObjCLiente.saldoTotal = ObjCLiente.saldoTotal - compra;
+//     }
+//     return {...ObjCLiente,
+//     saldoTotal: ObjCLiente.saldoTotal,
+//     compras: []
+//     }
+// })
+// return comprinhas;
+// }
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
