@@ -1,0 +1,102 @@
+  /*=====================PAGINA INICIAL============================*/
+#bem-vindo {
+    background-color: greenyellow;
+    color: blueviolet
+    
+}
+
+ .mercado-caro {
+     background-color: blueviolet;
+     color: white;
+     border: 2px solid yellow;
+     
+ }   
+   /*=====================FUNCIONÁRIO============================*/
+
+  .funcionarios {
+      color: brown;
+  }
+
+  .funcionarios-mercado {
+      color:blue;
+      border: 1px solid black;
+      background-color: yellow;
+  }
+
+  #dono-empresa {
+      color: rgba(30, 102, 30, 0.8)
+  }
+
+  /*=====================CONTROLE DE ESTOQUE============================*/
+  .atacadao-da-riqueza {
+    background-color: rgba(24, 183, 160, 0.8);
+    border: 5px solid black;
+    padding: 10px 10px 10px 10px;
+    color: blue;
+}
+    #controle-de-estoque{
+        border: 5px solid green;
+    }
+    td {
+        border: solid;
+    }
+
+  .produtos {
+      background-color: rgba(432, 105, 186, 0.8) ;
+      border: 10px solid black;
+      margin: 10px 10px 10px 10px;
+      padding: 20px 20px 20px 20px;
+  }
+
+  .produtos1 {
+    background-color: rgba(43, 105, 186, 0.8) ;
+    border: 10px solid black;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+} 
+ .produtos2 {
+    background-color: rgba(43, 105, 186, 0.8) ;
+    border: 10px solid black;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+} 
+ .produtos3 {
+    background-color: rgba(43, 105, 186, 0.8) ;
+    border: 10px solid black;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+}
+  .produtos4 {
+    background-color: rgba(43, 105, 186, 0.8) ;
+    border: 10px solid black;
+
+} 
+ .produtos5 {
+    background-color: rgba(43, 105, 186, 0.8) ;
+    border: 10px solid black;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+  .controle {
+      color: rgba(77, 84, 93, 0.8);
+      
+  }
+
+ /*=====================ADICIONAR PRODUTOS============================*/
+    .atacadao-da-riqueza {
+        background-color: rgba(24, 183, 160, 0.8);
+    }
+
+  .add-produtos {
+      background-color: rgba(77, 84, 93, 0.8);
+  }
+
+  .botao {
+      background-color: rgba(77, 179, 93, 0.8);
+  }
+
+  .itens-adicao {
+      color: rgba(24, 122, 160, 0.8);
+      border: 2px solid 
+  }

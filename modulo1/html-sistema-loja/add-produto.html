@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="loja.css">
     <title>Adicionar Produto</title>
 </head>
 <body>
-    <header>
+    <header class ="atacadao-da-riqueza">
         <p>Atacadão da Riqueza</p>
     </header>
     
@@ -19,28 +20,28 @@
     </nav>
 
     
-    <h2>Adicionar Produto</h2>
-    <form action="">
-            <label for="link-foto">Link para foto: </label>
+    <h2 class ="add-produtos">Adicionar Produto</h2>
+    <form class = "itens-adicao">
+            <label for="link-foto"><b>Link para foto: </b></label>
             <input type="url" id="link-foto" name="link-foto">
             <br>
      
-            <label for="descricao">Descrição do produto: </label>
+            <label for="descricao"><b>Descrição do produto: </b></label>
             <!-- Adicione o id apropriado para o input abaixo -->
             <input type="text" id="insira o nome do produto" name="descrição">
             <br>
-            <label for="preco">Preço (em R$): </label>
+            <label for="preco"><b>Preço (em R$): </b></label>
             <!-- Adicione o id apropriado e o type para receber números abaixo -->
             <input type="number" id="insira o valor do produto" name="preço">
             <br>
 
             <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label>Quantidade disponível: </label>
+            <label><b>Quantidade disponível: </b></label>
             <input type="number" id="Quantidade disponivel do produto" name="quantidade">
 
             <br>
             <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-            <button type="submit">Adicionar</button>
+            <button class ="botao" type="submit">Adicionar</button>
 
     </form>
 
