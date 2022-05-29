@@ -1,5 +1,10 @@
 body {
-    background-color: rgb(141, 216, 216);
+    background-color: rgb(229, 240, 240);
+}
+
+#foto-perfil{
+    width: 10vw;
+    border-image: space;
 }
 
 #sobremim {
