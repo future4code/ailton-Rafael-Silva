@@ -15,7 +15,6 @@ td {
 
 .conteiner {
     width: 100px; height: 150px;
-    border: solid;
     background-color: rgba(24, 183, 160, 0.8);
     border: 1px solid black;
     padding: 10px 10px 10px 10px;
@@ -23,5 +22,9 @@ td {
 }
 
 #voltar:hover {
-    background-color: rgb(115, 151, 172);
+    background-color: rgb(173, 173, 173);
+}
+
+#voltar:active {
+    color: white;
 }
