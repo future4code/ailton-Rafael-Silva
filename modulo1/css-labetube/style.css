@@ -1,0 +1,55 @@
+html, * {
+    /** Reseta os estilos **/
+    margin: 5;
+    padding: 5;
+  }
+
+  div.body-content{
+    margin-bottom: 40px;
+  }
+/*=====CABECALHO========*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+}
+#divBusca{
+    display: flex;
+    background-color: aliceblue;
+    border:solid 1px;
+}
+
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:2px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    width:200px;
+  }
+/*=====VIDEOS========*/
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
+    width:  100vw;
+    height: 85vh;
+    background-color: rgb(114, 114, 212);
+}
+
+
+/*=====RODAPÉ========*/
+.rodape{
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    position:fixed;
+    width: 100%;   
+    text-align: center;
+    background-color: orange;
+    display: grid;
+}
