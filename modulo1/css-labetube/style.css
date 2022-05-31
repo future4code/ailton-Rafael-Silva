@@ -8,6 +8,16 @@ html, * {
     margin-bottom: 40px;
   }
 /*=====CABECALHO========*/
+.camera{
+    width: 3%;
+    height: 3%;
+    margin: 5px;
+ 
+}
+.rafaTu{
+    display: flex;
+   justify-content: left;
+}
 #header {
     display: flex;
     justify-content: space-between;
@@ -17,6 +27,7 @@ html, * {
     display: flex;
     background-color: aliceblue;
     border:solid 1px;
+    margin: 30px;
 }
 
 #txtBusca{
@@ -26,7 +37,7 @@ html, * {
     font-style:italic;
     font-size:18px;
     border:none;
-    width:200px;
+    width:150px;
   }
 /*=====VIDEOS========*/
 
