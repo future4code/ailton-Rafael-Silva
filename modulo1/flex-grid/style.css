@@ -11,8 +11,9 @@ header {
     height: 5%;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5px;
+    padding: 0 10px 30px 0px;
     background-color: mediumvioletred;
+    font-size: 30px;
 }
 
 main {
@@ -37,25 +38,28 @@ main {
 }
 
 .section1 {
-    gap: 20px;
+    gap: 71px;
     display: flex;
-    height: 20px;
+    height: 34px;
+    align-items:right;
 }
 
 .section2 {
-    gap: 20px;
+    gap: 71px;
     display: flex;
-    height: 20px;
+    height: 34px;
+    align-items:right;
 }
 .section3{
-    gap: 20px;
+    gap: 71px;
     display: flex;
-    height: 20px;
+    height: 34px;
+    align-items:right;
 }
 .section4 {
-    gap: 20px;
+    gap: 71px;
     display: flex;
-    height: 20px;
+    height: 34px;
 }
 .section-bolos {
     display: flex;
@@ -71,5 +75,6 @@ footer {
     height: 3vh;
     background-color: mediumvioletred;
     text-align: center;
+    font-size: 20px;
     
 }
