@@ -7,8 +7,9 @@ function criarArrayNomesAnimais() {
       { nome: "Carpa", classificacao: "peixe" },
       { nome: "Pomba", classificacao: "ave" }
     ]
-const animal = animais.map(criarArrayNomesAnimais(item){
-  return item.nome
+const novoArray = animais.map((animais) =>{
+  return animais.nome
 })
+return novoArray
 }
 ```
