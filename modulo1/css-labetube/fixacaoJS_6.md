@@ -14,8 +14,10 @@ function filtraTarefas() {
     { titulo: "Jogar Videogame", status: "todo", tempo: 120 },
     { titulo: "Assistir Novela", status: "todo", tempo: 90 }
  ]
-const novoArray = tarefas.map((status) =>{
-  return tarefas.status ==='done'; 
+const novoArray = tarefas.filter((tarefa) =>{
+  return tarefa.status ==='done'
+}).map((tarefa) => {
+  return tarefa.titulo
 })
 return novoArray
 }
