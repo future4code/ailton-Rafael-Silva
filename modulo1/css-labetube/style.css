@@ -1,0 +1,121 @@
+html, * {
+
+    margin: 0px;
+    padding: none;
+  }
+
+  div.body-content{
+    margin-bottom: 40px;
+  }
+
+
+/*=====CABECALHO========*/
+.camera{
+    width: 3%;
+    height: 3%;
+    margin: 5px;
+ 
+}
+.rafaTu{
+    display: flex;
+   justify-content: left;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    width: 100vw;
+    font-size: 12px;
+}
+
+#divBusca{
+    display: flex;
+    background-color: aliceblue;
+    border:solid 1px;
+    margin: 30px;
+}
+
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:2px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    width:150px;
+  }
+/*=====VIDEOS========*/
+
+.botoes {
+    display: grid;
+    grid-template-columns: 500px 500px 500px 500px;
+    grid-template-rows: 500px 500px;
+    gap: 10px;
+    padding: 30px;
+    height: 85vh;
+    justify-items:normal;
+    align-items: center;
+    background-color: rgb(114, 114, 212);
+    justify-content: center;
+    justify-items: center;
+}
+.botoes1 {
+    width: 100px;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .botoes {
+      flex-direction: column;
+      display: flex;
+      height: 100%;
+    }
+}
+.botoes1 {
+    border-radius: 20%;
+
+}
+
+/*=====RODAPÉ========*/
+.rodape{
+    bottom: 0;
+    left: 0;
+    height: 5%;
+    position:fixed;
+    width: 100%;   
+    text-align: center;
+    background-color: orange;
+    display: grid;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+
+    .camera{
+        width: 15%;
+        height: 15%;
+        margin: 10px;
+     
+    }
+    .rodape{
+        bottom: 0;
+        width: 100%;   
+        text-align: center;
+        background-color: orange;
+        font-size: 9px;
+        
+    }
+    #txtBusca{
+        float:left;
+        background-color:transparent;
+        padding-left:2px;
+        font-style:italic;
+        font-size:13px;
+        border:none;
+        width:150px;
+      }
+}
