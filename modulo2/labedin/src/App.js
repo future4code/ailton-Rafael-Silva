@@ -2,8 +2,11 @@ import React from 'react';
 import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
-import rosto from './img/rosto.png'
 import { CardPequeno } from './components/CardPequeno/CardPequeno';
+import rosto from './img/rosto.png';
+import setabaixo from './img/seta-baixo.png';
+//import email from './img/email.jpg';
+//import endereco from './img/endereco.png';
 import {Corpo, VerMais} from "./App.styled";
 
 function App() {
@@ -20,7 +23,7 @@ function App() {
         </Corpo>
         <VerMais>
         <ImagemButton 
-          imagem="https://image.flaticon.com/icons/png/512/117/117472.png" 
+          imagem={setabaixo}
           texto="Ver mais"
         />
         </VerMais>
@@ -29,7 +32,9 @@ function App() {
       <div className= 'page-section-container'>
         <Corpo>
         <CardPequeno
+        imagem="https://thumbs.dreamstime.com/b/email-abrir-%C3%ADcone-novo-bonito-meticulosamente-projetado-aberto-e-mail-vetor-bem-organizado-totalmente-edit%C3%A1vel-158557376.jpg"
         email='Email: farofa@gmail.com'
+        //imagem1={endereco}
         Endereço='Endereço: quadra 9 lote 15'
         />
         </Corpo>
