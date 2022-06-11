@@ -2,6 +2,7 @@ import styled from "styled-components";
 import './App.css';
 import React from 'react';
 
+
 //const Container = styled.div`
 //display: flex,
 //flex-firection: column,
@@ -9,16 +10,32 @@ import React from 'react';
 
 const ZapContainer = styled.div`
 display: flex;
+//flex: 1 1 0%;
 width: 40rem;
-height: 100vh;
+height: 95vh;
 border: solid black;
-align-items: center
+align-items: stretch;
+display: flex;
+flex-direction: column;
+padding: 20px;
+background-color: #DDF7C8
 `
 
-const WhatslabVerde = styled.h3`
-color: green
+const FooterWhats = styled.footer`
+position: fixed;
+width: 40rem;
+bottom: 0;
+padding: 20px;
+`
 
-`;
+const WhatslabVerde = styled.h1`
+color: green;
+text-align: center
+
+`
+const MensagemInput = styled.input`
+width: 100vh;
+`
 
 class App extends React.Component {
   state = {
@@ -65,24 +82,30 @@ class App extends React.Component {
 
 
   return (
+
     <ZapContainer>
-      <WhatslabVerde>Whatslab</WhatslabVerde>
+      <WhatslabVerde>WhatsLab</WhatslabVerde>
       <div>
-        <input
+      
+      <FooterWhats>
+      <div>{totalMensagens}</div>
+      <input
           value={this.state.valorInputNome}
           onChange={this.onChangeInputNome}
-          placeholder={"Nome"}
+          placeholder={"Usuário"}
         />
-
-        <input
+        
+        <input 
           value={this.state.valorInputMensagem}
           onChange={this.onChangeInputMensagem}
           placeholder={"mensagem"}
         />
-        <button onClick={this.addPessoa}>Enviar</button>
+
+        <button onClick={this.addPessoa}>Enviar</button></FooterWhats>
       </div>
-      <div>{totalMensagens}</div>
+
     </ZapContainer>
+
    );
   }
 }
