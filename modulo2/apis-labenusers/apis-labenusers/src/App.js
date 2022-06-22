@@ -1,41 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-import axios from 'axios';
+//import axios from 'axios';
 import React from 'react';
+import TelaCadastro from './components/TelaCadastro';
+import TelaListaUsuario from './components/TelaListaUsuario';
 
 
-class App extends React.Component {
-state = {
-imputName: '',
-imputEmail: '',
-};
-
-onChangeInput = (event) => {
-  this.setState({imputName: event.target.value});
-};
-onChangeInput = (event) => {
-  this.setState({imputEmail:event.target.value});
-};
-
-componentDidMount (event) {
-  this.setState({imputName: event.target.value});
-};
-componentDidMount (event) {
-  this.setState({imputEmail: event.target.value});
-};
-
-getAllusers = () => {
-axios.post ( "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-body,
-{
-  headers: {
-    Authorization: "rafael-barbosa-aitlon"
+export default class App extends React.Component {
+  state = {
+    telaAtual: "cadastro"
   }
-})
-  render () {
 
-    
+  escolheTela = () => {
+    switch (this.state.telaAtual) {
+      case "cadastro":
+        return <TelaCadastro irParaLista={this.irParaLista}/>
+        case "lista":
+          return <TelaListaUsuario irParaCadastro={this.irParaCadastro}/>
+          default:
+            return <div>Erro! Pagina nao encontrada!</div>
+    }
+  }
+
+  irParaCadastro = ()=> {
+    this.setState({telaAtual: "cadastro" })
+  }
+
+  irParaLista = ()=> {
+    this.setState({telaAtual: "lista"})
+  }
+
+  render() {
+    return (
+      <div>
+        {this.escolheTela()}
+      </div>
+    )
   }
 }
 
-export default App;
+
