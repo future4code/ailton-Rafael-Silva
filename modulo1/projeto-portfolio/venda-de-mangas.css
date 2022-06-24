@@ -1,0 +1,30 @@
+body {
+    background-color: blanchedalmond;
+}
+.mangas {
+    color: rgb(47, 47, 80);
+    background-color: rgb(163, 163, 143);
+    border: 1px solid grey;
+    text-align: center;
+}
+
+td {
+    border: 1px solid;
+    text-align: center;  
+}
+
+.conteiner {
+    width: 100px; height: 150px;
+    background-color: rgba(24, 183, 160, 0.8);
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+     
+}
+
+#voltar:hover {
+    background-color: rgb(173, 173, 173);
+}
+
+#voltar:active {
+    color: white;
+}

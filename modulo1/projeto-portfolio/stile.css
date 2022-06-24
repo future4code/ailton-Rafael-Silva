@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(229, 240, 240);
+}
+
+#foto-perfil{
+    width: 10vw;
+    border-image: space;
+}
+
+#sobremim {
+    background-color: rgb(132, 132, 158);
+    border: 3px solid black;
+    text-align: center;
+}
+
+.instituicoes {
+    background-color: rgb(137, 137, 182);
+    border: 1px solid black;
+}
+
+.habilidades {
+    background-color: rgb(137, 137, 182);
+    border: 1px solid black;
+}
+
+.redes-sociais {
+    background-color: rgb(137, 137, 182);
+    border: 1px solid black;
+}
