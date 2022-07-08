@@ -14,7 +14,7 @@ const Inicio = (props) => {
 
     axios
       .post(
-        "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/mauro-neto-julian/choose-person", 
+        "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/rafael/choose-person", 
         body
       )
       .then(resposta=>{
