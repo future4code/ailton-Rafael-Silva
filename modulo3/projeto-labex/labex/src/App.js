@@ -1,10 +1,13 @@
+import React from 'react';
+import GlobalStyle from './globalStyles';
+import Router  from './routes/Router'
 
-import './App.css';
 
 function App() {
   return (
     <div>
-          Olá mundo!
+      <GlobalStyle />
+     <Router/>
     </div>
   );
 }
