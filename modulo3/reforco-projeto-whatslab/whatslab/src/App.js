@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './App.css';
 import React from "react";
-import { Container, FooterWhats, WhatslabVerde } from "./estilizacao/styled";
+import { Container, FooterWhats, WhatslabVerde} from "./estilizacao/styled";
 
 export function App() {
   const [nome, setNome] = useState('')
@@ -26,10 +26,9 @@ export function App() {
   const att = () => {
     setMsg(newList)
     setNome('')
-    setMsgUser('')
   };
 
-  const renderiza = msg.map((item) => {
+  const mensagem = msg.map((item) => {
     if (item.nome === "eu") {
       return <p key={item.nome}>{item.nome}: {item.mensagem} </p>
     } else {
@@ -44,7 +43,7 @@ export function App() {
       <div >
         <WhatslabVerde>WHATSLAB</WhatslabVerde>
 
-        <div>{renderiza}</div>
+        <div>{mensagem}</div>
 
         <FooterWhats>
           <input

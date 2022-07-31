@@ -14,7 +14,6 @@ background-color: #DDF7C8;
 
 export const FooterWhats = styled.div`
 position: fixed;
-width: 40rem;
 bottom: 0;
 padding: 20px;
 `;
@@ -26,3 +25,4 @@ text-align: center;
 export const MensagemInput = styled.input`
 width: 100vh;
 `;
+
