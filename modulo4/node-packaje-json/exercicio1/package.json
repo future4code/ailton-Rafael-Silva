@@ -1,0 +1,12 @@
+{
+  "name": "aula-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eu.js",
+  "type": "module",
+  "scripts": {
+    "start": "node eu.js"
+  },
+  "author": "Rafael Barbosa",
+  "license": "ISC"
+}
