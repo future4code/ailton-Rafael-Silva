@@ -26,10 +26,10 @@
 //     texto: string
 //   }
 
-//   function buscarPostsPorAutor(posts: string, autorInformado: string) {
-//     return posts.filter (
-//       (post: string) => {
+//   function buscarPostsPorAutor(posts, autorInformado) {
+//     return posts.filter(
+//       (post) => {
 //         return post.autor === autorInformado
 //       }
 //     )
-//   }
+//   }  
