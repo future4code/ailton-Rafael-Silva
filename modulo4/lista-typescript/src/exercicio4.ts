@@ -14,7 +14,6 @@ const trabalhadores: tipos[] = [
 	{ nome: "Paola" ,salário: 3500, setor: setores.marketing, presencial: true }
 ]
 
-retornaTrabalhadores(trabalhadores)
 
 type tipos= {
     nome: string,
@@ -23,10 +22,9 @@ type tipos= {
     presencial: boolean
 }
 
-function retornaTrabalhadores(trabalhadores:any) {
-    const result = trabalhadores.filter((item: any) =>{
+    const trampo = trabalhadores.filter((item: any) =>{
         return item.presencial === true
     })
-    console.log(result)
-}
+    console.table(trampo)
+
 
