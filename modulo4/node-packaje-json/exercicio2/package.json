@@ -1,0 +1,12 @@
+{
+  "name": "exercicio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mat.js",
+  "scripts": {
+    "start": "node mat.js"
+  },
+  "keywords": [],
+  "author": "Rafael-Barbosa",
+  "license": "ISC"
+}
